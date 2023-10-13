@@ -1,0 +1,57 @@
+.Spot,
+.vehicle,
+.dayNo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  align-items: center;
+  font-size: 20px;
+}
+.dayNo {
+  font-size: 42px;
+}
+.btns {
+  display: flex;
+  float: right;
+}
+.spotImg,
+.vehicleImg {
+  padding-right: 25px;
+}
+@media (max-width: 900px) {
+  .daywise {
+    width: 600px;
+  }
+}
+
+/* Media query for 820px and above */
+@media (max-width: 820px) {
+  .daywise {
+    /* Styles for 820px and above */
+    width: 500px;
+  }
+}
+
+/* Media query for 700px and above */
+@media (max-width: 700px) {
+  .daywise {
+    /* Styles for 700px and above */
+    width: 500px;
+  }
+}
+
+/* Media query for 412px and above */
+@media (max-width: 412px) {
+  .daywise {
+    /* Styles for 412px and above */
+    width: 412px;
+  }
+}
+
+/* Media query for 380px and above */
+@media (max-width: 380px) {
+  .daywise {
+    /* Styles for 380px and above */
+    width: 380px;
+  }
+}

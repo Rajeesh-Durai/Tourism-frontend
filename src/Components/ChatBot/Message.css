@@ -1,0 +1,18 @@
+/* Message.css */
+.message {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+/* Styles for user messages */
+.message.user {
+  color: white;
+  align-self: flex-end;
+}
+
+/* Styles for bot messages */
+.message.bot {
+  align-self: flex-start;
+}

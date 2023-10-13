@@ -1,0 +1,102 @@
+/* chatbot.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+.chatbotClickBtn {
+  position: absolute;
+  width: 80px; /* Same as width to make it perfectly circular */
+  border-radius: 50%; /* Make the image circular */
+  border: 3px solid #9c0beb; /* Add a professional border with the desired color */
+  cursor: pointer;
+}
+.chatbotClickBtnDiv {
+  position: fixed;
+  z-index: 10000;
+  margin-top: -97%;
+  margin-left: 94%;
+}
+
+.chatbot-container {
+  width: 400px;
+  height: 493px; /* Customize the height of the chatbot */
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+  bottom: 7px;
+}
+
+.chatbot-header {
+  /* background: linear-gradient(#8f00ff, #a32eff, #a32eff, #a32eff, #8f00ff); */
+  background-color: #003329;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.chatbot-messages {
+  flex: 1;
+  overflow: scroll;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Display messages in a column */
+  background: url('../../assets/images/chatbg.jpg');
+  background-size: cover;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  max-width: 80%;
+}
+.chatBotButtonSend {
+  /* background: linear-gradient(to right, #8f00ff, #a32eff, #a32eff, #b75cff); */
+  background-color: #003329;
+  width: 65px;
+  border-radius: 7px;
+  color: white;
+  height: 34px;
+  border: none;
+}
+.chatBotInput {
+  width: 297px;
+  height: 31px;
+  border: none;
+  padding-left: 10px;
+}
+.user {
+  /* background: linear-gradient(to right, #8f00ff, #a32eff, #a32eff, #b75cff); */
+  background-color: #003329;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  align-self: flex-end;
+}
+
+.bot {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  color: #333;
+  align-self: flex-start;
+}
+
+.chatbot-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #e0e0e0;
+}

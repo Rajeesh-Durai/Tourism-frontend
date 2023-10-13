@@ -1,0 +1,139 @@
+.packageImg {
+  background-image: url('../../assets/images/Andaman.jpg');
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(1.5);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.package-cards-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.searchBox {
+  background-color: white;
+  font-size: 24px;
+  border-radius: 60px;
+  padding: 50px;
+  width: 300px;
+  border: none;
+}
+.packageImg h1 {
+  font-size: 42px;
+}
+.not-available-message {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding: 80px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.package-cards-container {
+  margin: 50px;
+}
+.package-cards {
+  max-width: 400px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  transition: 1s;
+}
+.package-cards:hover {
+  transform: scale(1.1);
+}
+.package-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.package-days {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.package-itinerary {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.package-food {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.package-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+.loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+/* Add this style to dim the background */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Change the opacity value to adjust the dimming effect */
+  z-index: 9999;
+}
+
+/* Rest of your existing styles */
+/* ... */
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .package-cards-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .package-cards {
+    max-width: 300px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    transition: 1s;
+  }
+  .package-cards-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

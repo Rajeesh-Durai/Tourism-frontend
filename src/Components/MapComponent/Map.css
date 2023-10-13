@@ -1,0 +1,107 @@
+/* MapComponent.css */
+.map {
+  .rsm-geography {
+    fill: #4faa9b;
+    stroke: #003329;
+  }
+
+  .rsm-marker {
+    fill: none;
+    stroke: #053a47;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+.composableMap {
+  height: 552px;
+  width: auto;
+  padding-left: 200px;
+}
+/* .sectmap {
+  background-image: url(../../../Assets/we-went-little-day-tour-around-mullfjallet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+} */
+
+.marker {
+  fill: #86e0ba;
+}
+
+.service {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Manrope';
+  position: absolute;
+  bottom: 100px;
+  left: 300px;
+}
+
+.marker path {
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    fill: #fff;
+  }
+  to {
+    fill: rgb(226, 137, 115);
+  }
+}
+.map-head {
+  text-align: center;
+  padding-top: 120px;
+  font-size: 30px;
+  color: #053a47;
+}
+.map {
+  width: auto;
+  height: 900px;
+  background-image: url(../../assets/images/mapBg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: relative;
+  top: 5%;
+}
+.ipad {
+  position: relative;
+  top: 63%;
+  right: 50%;
+}
+.travelhead {
+  font-weight: 800;
+  font-size: 38px;
+  margin-top: 120px;
+}
+.travelbody {
+  font-weight: 700;
+  font-size: 34px;
+}
+.travelbody2 {
+  font-weight: 500;
+  font-size: 28px;
+}
+.travelhead,
+.travelbody,
+.travelbody2 {
+  opacity: 0; /* Start with opacity 0 to hide the elements initially */
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-in animation to the elements */
+.travelhead,
+.travelbody,
+.travelbody2 {
+  animation: fadeIn 1.5s ease-in-out forwards; /* Adjust the duration as per your preference */
+}

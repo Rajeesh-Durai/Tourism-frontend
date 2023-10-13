@@ -1,0 +1,249 @@
+.plan {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.plancontainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 105vh;
+}
+
+#plantext {
+  position: absolute;
+  font-size: 5em;
+  color: #112434;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.plancontainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.plancontainer-2 {
+  position: relative;
+  background-color: white;
+  padding: 100px;
+}
+.planimg-1 img,
+.planimg-2 img,
+.planimg-3 img {
+  width: 600px;
+  height: 350px;
+}
+.plancontent-1,
+.plancontent-2,
+.plancontent-3 {
+  width: 100%;
+  display: flex;
+  height: 350px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  transition: transform 0.3s;
+}
+.plancontent-1:hover,
+.plancontent-2:hover,
+.plancontent-3:hover {
+  transform: scale(1.05);
+}
+.plantext-1,
+.plantext-2,
+.plantext-3 {
+  padding-left: 20px;
+  padding-top: 60px;
+  background-color: #2f576a;
+  color: #ffffff;
+}
+.plantext-1 p,
+.plantext-2 p,
+.plantext-3 p {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+.plantext-1 h2,
+.plantext-2 h2,
+.plantext-3 h2 {
+  color: rgb(229, 231, 224);
+  text-align: center;
+  padding-bottom: 10px;
+}
+.planhead {
+  text-align: center;
+  font-size: 40px;
+  transition: transform 0.3s;
+}
+.planhead:hover {
+  transform: scale(1.1);
+}
+
+.text-center {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1356px) {
+  .planimg-1 img,
+  .planimg-2 img,
+  .planimg-3 img {
+    width: 500px;
+  }
+  .plancontent-1,
+  .plancontent-2,
+  .plancontent-3 {
+    width: 1000px;
+  }
+  .plantext-1,
+  .plantext-2,
+  .plantext-3 {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1281px) {
+  .plancontainer {
+    height: 86vh;
+  }
+  .plancontent-1,
+  .plancontent-2,
+  .plancontent-3 {
+    display: block;
+    width: 500px;
+    height: 700px;
+    margin-left: 200px;
+  }
+  .plantext-1,
+  .plantext-2,
+  .plantext-3 {
+    height: 350px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .planimg {
+    display: block;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .plantoggle {
+    display: block;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .plancontainer {
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .plancontainer {
+    height: 37vh;
+  }
+  #plantext {
+    font-size: 3em;
+  }
+  .plancontent-1,
+  .plancontent-2,
+  .plancontent-3 {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .plansticky {
+    width: 80%;
+    padding: 0 20px;
+    margin-left: 90px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .plancontainer {
+    height: 40vh;
+  }
+  #plantext {
+    font-size: 3em;
+  }
+  .plancontent-1,
+  .plancontent-2,
+  .plancontent-3 {
+    margin-left: 0px;
+    width: 300px;
+    height: 1000px;
+    margin-right: 80px;
+  }
+  .plantext-1,
+  .plantext-2,
+  .plantext-3 {
+    height: 500px;
+    width: auto;
+  }
+  .planimg-1 img,
+  .planimg-2 img,
+  .planimg-3 img {
+    width: 300px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .plansticky {
+    width: 80%;
+    padding: 0 20px;
+    margin-left: 65px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #plantext {
+    font-size: 2rem;
+  }
+  .plancontainer {
+    height: 40vh;
+  }
+  .plansticky {
+    width: 80%;
+    padding: 0 20px;
+    margin-left: 40px;
+  }
+  .planimg img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 530px) {
+  #plantext {
+    font-size: 1.5em;
+  }
+
+  .plancontainer-2 {
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .plansticky {
+    width: 80%;
+    padding: 0 20px;
+    margin-left: 30px;
+  }
+  .planimg img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .plancontainer {
+    height: 24vh;
+  }
+}
+@media screen and (max-width: 380px) {
+  .plancontainer {
+    height: 26vh;
+  }
+}
+@media screen and (max-width: 280px) {
+  #plantext {
+    font-size: 1em;
+  }
+  .plancontainer {
+    height: 22.5vh;
+  }
+}

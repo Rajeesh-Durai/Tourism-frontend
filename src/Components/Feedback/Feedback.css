@@ -1,0 +1,131 @@
+.feedback {
+  background: linear-gradient(#2b1055, #7597de);
+  min-height: 100vh;
+}
+.feedcontainer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 97.8vh;
+}
+
+#feedtext {
+  position: absolute;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+#moon {
+  mix-blend-mode: screen;
+}
+.feedcontainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.feedbackform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f0739;
+}
+.Feedback_Form {
+  width: 500px;
+  background-color: #fffffff2;
+  border-radius: 8px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.feedbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.messagebox {
+  border: none;
+}
+@media screen and (max-width: 1281px) {
+  .feedbackcontainer {
+    height: 86vh;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .feedbackcontainer {
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .feedbackcontainer {
+    height: 37vh;
+  }
+  #feedtext {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .feedbackcontainer {
+    height: 40vh;
+  }
+  #feedtext {
+    font-size: 3em;
+  }
+  .Feedback_Form {
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #feedtext {
+    font-size: 2rem;
+  }
+  .feedbackcontainer {
+    height: 40vh;
+  }
+  .Feedback_Form {
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 530px) {
+  #feedtext {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .feedbackcontainer {
+    height: 24vh;
+  }
+  .Feedback_Form {
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .feedbackcontainer {
+    height: 26vh;
+  }
+}
+@media screen and (max-width: 280px) {
+  #feedtext {
+    font-size: 1em;
+  }
+  .feedbackcontainer {
+    height: 22.5vh;
+  }
+}

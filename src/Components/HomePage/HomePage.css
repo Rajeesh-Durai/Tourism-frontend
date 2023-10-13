@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+.homePage {
+  background-color: #f9f9f9;
+  z-index: -999;
+  overflow-x: hidden;
+}
+.homecontainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#destinationtext {
+  position: absolute;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.homeimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.homecontainer-2,
+.homecontainer-3 {
+  position: relative;
+  background-color: #ccc;
+  margin-top: 100px;
+  overflow: hidden;
+}
+.homeCont1 {
+  width: 90%;
+  margin-left: 75px;
+  border-radius: 10px;
+}
+.homecontainer-2 {
+  background-color: #e2e2e2;
+  width: 90%;
+  margin-left: 75px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+.homePageCard {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 50px;
+  padding-top: 0px;
+}
+.homePart {
+  background-color: #003329;
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.homeDeals {
+  padding: 50px;
+  padding-bottom: 30px;
+}
+.bg-imageHome {
+  width: 200px;
+  height: 250px;
+  margin: 25px;
+  background-size: cover;
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: 0.5s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.bg-imageHome:hover {
+  transform: scale(1.2);
+}
+.bg-imageHome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px; /* Adjust the opacity value (0.3) to change the dimming effect */
+}
+.bOAnll {
+  position: relative;
+  top: 4.5%;
+  padding-left: 165px;
+}
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px; /* Add an overlay with some transparency */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.carousel-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.slick-dots li button:before {
+  color: transparent;
+}
+.slick-slide img {
+  height: 700px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.slick-dots li.slick-active button {
+  background-color: #17a2b8;
+}
+
+@media screen and (max-width: 1281px) {
+  .homecontainer {
+    height: 90vh;
+  }
+  .map {
+    height: 730px;
+    background-size: contain;
+  }
+  .composableMap {
+    height: 441px;
+    width: auto;
+    padding-left: 126px;
+  }
+  .map-head {
+    padding-right: 79px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .homePageCard {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .homecontainer {
+    height: 90vh;
+  }
+  #destinationtext {
+    font-size: 4em;
+  }
+  .homePart {
+    padding-right: 49px;
+  }
+  .composableMap {
+    height: 326px;
+  }
+  .map {
+    height: 585px;
+  }
+  .daywise {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .homecontainer {
+    height: 37vh;
+  }
+  #text {
+    font-size: 3em;
+  }
+  .composableMap {
+    padding-left: 65px;
+  }
+  .content-1 {
+    width: 45%;
+  }
+  .map-head {
+    padding-top: 73px;
+  }
+}
+@media screen and(max-width:920px) {
+  .bOAnll {
+    padding-left: 140px;
+  }
+  .homePageCard {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .map {
+    height: 469px;
+  }
+  .composableMap {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .homecontainer {
+    height: 40vh;
+  }
+  .slick-slide img {
+    height: 537px;
+  }
+  #text {
+    font-size: 3em;
+  }
+  #destinationtext {
+    margin-top: 59.8px;
+    font-size: 3.5em;
+  }
+
+  .map {
+    height: 436px;
+  }
+  .composableMap {
+    height: 265px;
+  }
+  .daywise {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .content-1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #text {
+    font-size: 2rem;
+  }
+  .homePart {
+    padding-right: 105px;
+  }
+  .homePageCard {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+    padding-top: 0px;
+  }
+  .composableMap {
+    height: 182px;
+  }
+  .map-head {
+    padding-top: 50px;
+  }
+  .bOAnll {
+    position: relative;
+    top: 4.5%;
+    padding-left: 131px;
+  }
+  .homecontainer {
+    height: 42vh;
+  }
+  #destinationtext {
+    font-size: 2.5em;
+  }
+  .map {
+    height: 309px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #text {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .slick-slide img {
+    height: 377px;
+  }
+  .homecontainer {
+    height: 24vh;
+  }
+  #destinationtext {
+    font-size: 1.5em;
+    margin-top: 14.8px;
+  }
+  .map {
+    height: 236px;
+  }
+  .homePageCard {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0;
+    padding-top: 0px;
+  }
+  .homePart {
+    padding-right: 150px;
+  }
+  .homeDeals {
+    font-size: 1em;
+    padding: 20px;
+  }
+  .map-head {
+    padding-top: 35px;
+    font-size: 17px;
+    padding-left: 15px;
+  }
+  .composableMap {
+    height: 152px;
+  }
+  .bOAnll {
+    position: relative;
+    top: 4.5%;
+    padding-left: 92px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .homecontainer {
+    height: 26vh;
+  }
+}
+@media screen and (max-width: 280px) {
+  #text {
+    font-size: 1em;
+  }
+  .homecontainer {
+    height: 22.5vh;
+  }
+}

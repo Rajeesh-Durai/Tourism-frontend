@@ -1,0 +1,113 @@
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/images/add-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(1.5);
+  color: white;
+  font-size: 34px;
+}
+.options h1 {
+  font-size: 62px;
+}
+.pic-drop {
+  width: 441px;
+  height: 291px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 2px dashed #9da2b6;
+  border-radius: 6px;
+  margin-top: 26px;
+  margin-left: 43px;
+  margin-right: 43px;
+}
+.pic-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 87px;
+}
+.Imagefile {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 14px;
+}
+.adminPostImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.adminRequest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.adminOption {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 74px;
+}
+.galleryPostBtn {
+  margin-top: 20px;
+}
+/* Define your custom styles here */
+.custom-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.custom-card-container h2 {
+  margin-top: 20px;
+}
+.custom-card {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 200px;
+}
+
+.custom-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.custom-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.custom-agency {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.custom-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.vertical-line {
+  border-left: 2px solid #626060;
+  height: 82vh;
+  margin-top: 20px;
+  margin: 10px 20px; /* Adjust the margin as per your requirement */
+}
